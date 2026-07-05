@@ -7,7 +7,7 @@ title:"GenAI Assistant Suite",
 
 category:"🧠 Generative AI",
 
-image:"public/projects/genai.png",
+image:"/projects/genai.png",
 
 description:
 "Multi-domain AI assistant platform supporting Education, Healthcare, Finance and Marketing using Generative AI.",
@@ -22,19 +22,20 @@ technologies:[
 "SQLite"
 ],
 
-caseStudy:{
-problem:
-"Different domains require customized AI assistants for specific workflows.",
+caseStudy: {
+  problem:
+    "Users need intelligent AI assistance across multiple domains, but switching between different tools reduces productivity and creates a fragmented experience.",
 
-solution:
-"Built a prompt-driven AI assistant suite supporting multiple industries.",
+  solution:
+    "Developed a multi-domain AI assistant platform integrating Generative AI capabilities for Education, Healthcare, Finance and Marketing domains with an interactive user interface.",
 
-features:[
-"Multi-domain assistants",
-"Prompt engineering",
-"AI workflow automation",
-"Gemini API integration"
-]
+  features: [
+    "Domain-based AI assistant selection",
+    "Gemini AI API integration",
+    "Prompt-driven intelligent responses",
+    "Interactive Streamlit interface",
+    "User friendly AI workflow"
+  ]
 }
 
 },
@@ -48,7 +49,7 @@ title:"SmartApply",
 
 category:"🚀 Automation",
 
-image:"public/projects/smartapply.png",
+image:"/projects/smartapply.png",
 
 description:
 "AI-powered placement form autofill assistant that helps students complete applications faster.",
@@ -64,19 +65,20 @@ technologies:[
 "Gemini AI"
 ],
 
-caseStudy:{
-problem:
-"Students repeatedly fill the same details in multiple placement forms.",
+caseStudy: {
+  problem:
+    "Students repeatedly fill the same placement and internship forms manually, which consumes time and increases chances of mistakes.",
 
-solution:
-"Created a smart profile-based automatic form filling assistant.",
+  solution:
+    "Built an AI-powered placement autofill assistant that detects form fields and automatically fills user profile information.",
 
-features:[
-"Profile storage",
-"Smart detection",
-"Resume upload",
-"Automatic filling"
-]
+  features: [
+    "Automatic form field detection",
+    "Profile information management",
+    "Smart autofill system",
+    "Resume upload support",
+    "Chrome extension based workflow"
+  ]
 }
 
 },
@@ -90,7 +92,7 @@ title:"Stream Savvy",
 
 category:"🌐 Full Stack",
 
-image:"public/projects/streamsavvy.png",
+image:"/projects/streamsavvy.png",
 
 description:
 "Modern full stack movie discovery platform with responsive UI and backend services.",
@@ -105,21 +107,21 @@ technologies:[
 "API Integration"
 ],
 
-caseStudy:{
-problem:
-"Users need an easy platform to discover entertainment content.",
+caseStudy: {
+  problem:
+    "Users spend significant time searching different platforms to discover movies and entertainment content.",
 
-solution:
-"Developed a MERN based movie discovery application.",
+  solution:
+    "Created a full stack movie discovery platform with a responsive frontend and backend services for smooth content exploration.",
 
-features:[
-"Movie search",
-"Responsive design",
-"API integration",
-"Backend services"
-]
+  features: [
+    "Modern responsive UI",
+    "Movie discovery platform",
+    "Backend API integration",
+    "Database management",
+    "User friendly experience"
+  ]
 }
-
 },
 
 
@@ -131,7 +133,7 @@ title:"Face Recognition Benchmark",
 
 category:"🤖 AI Research",
 
-image:"public/projects/facerecognition.png",
+image:"/projects/facerecognition.png",
 
 description:
 "Research-based comparison of face recognition algorithms using different AI approaches.",
@@ -146,19 +148,20 @@ technologies:[
 "Machine Learning"
 ],
 
-caseStudy:{
-problem:
-"Different recognition methods perform differently under various conditions.",
+caseStudy: {
+  problem:
+    "Face recognition accuracy changes with different preprocessing methods and algorithms, requiring detailed performance comparison.",
 
-solution:
-"Compared PCA, LBPH and FaceNet models for performance evaluation.",
+  solution:
+    "Implemented a research-based face recognition benchmark system comparing multiple image processing and machine learning approaches.",
 
-features:[
-"Image preprocessing",
-"Model comparison",
-"Accuracy evaluation",
-"Research analysis"
-]
+  features: [
+    "Face image preprocessing",
+    "Feature extraction techniques",
+    "Machine learning model evaluation",
+    "Accuracy comparison",
+    "Research analysis workflow"
+  ]
 }
 
 },
@@ -172,7 +175,7 @@ title:"SAP S/4HANA ERP Implementation",
 
 category:"🏢 Enterprise",
 
-image:"public/projects/sap.png",
+image:"/projects/sap.png",
 
 description:
 "ERP implementation project for managing manufacturing business processes.",
@@ -185,19 +188,20 @@ technologies:[
 "ERP"
 ],
 
-caseStudy:{
-problem:
-"Organizations require integrated systems for managing operations.",
+caseStudy: {
+  problem:
+    "Manufacturing companies require efficient management of materials, production and sales processes through an integrated system.",
 
-solution:
-"Configured SAP modules to improve enterprise workflows.",
+  solution:
+    "Designed an SAP S/4HANA ERP implementation model for managing business operations and improving enterprise workflows.",
 
-features:[
-"Material Management",
-"Production Planning",
-"Sales Distribution",
-"ERP Integration"
-]
+  features: [
+    "Material Management configuration",
+    "Production Planning workflow",
+    "Sales Distribution process",
+    "ERP business integration",
+    "End-to-end process mapping"
+  ]
 }
 
 },
@@ -211,13 +215,13 @@ title:"Personal Portfolio",
 
 category:"💻 Frontend",
 
-image:"public/projects/portfolio.png",
+image:"/projects/portfolio.png",
 
 description:
 "Modern animated developer portfolio built with React, Tailwind CSS and Framer Motion.",
 
-github:"#",
-demo:"#",
+github:"https://github.com/Suma623/SumaPortfolio",
+demo:"https://suma-portfolio-eight.vercel.app/",
 
 technologies:[
 "React",
@@ -226,21 +230,21 @@ technologies:[
 "Vite"
 ],
 
-caseStudy:{
-problem:
-"Need a professional online identity showcasing skills and projects.",
+caseStudy: {
+  problem:
+    "Developers need a professional platform to showcase skills, achievements, projects and experience effectively.",
 
-solution:
-"Created a responsive interactive portfolio website.",
+  solution:
+    "Created a modern animated developer portfolio using React, Tailwind CSS and Framer Motion with responsive design.",
 
-features:[
-"Animations",
-"Responsive UI",
-"Dark theme",
-"Project showcase"
-]
+  features: [
+    "Animated user interface",
+    "Responsive design",
+    "Project showcase",
+    "Contact integration",
+    "Modern UI animations"
+  ]
 }
-
 },
 
 
@@ -252,7 +256,7 @@ title:"Set-Associative Cache Simulator",
 
 category:"🖥️ COA Project",
 
-image:"public/projects/cache.png",
+image:"/projects/cache.png",
 
 description:
 "Interactive cache simulator that visualizes mapping, replacement policies and memory access behavior.",
@@ -267,19 +271,20 @@ technologies:[
 "FIFO"
 ],
 
-caseStudy:{
-problem:
-"Cache concepts are difficult to understand theoretically.",
+caseStudy: {
+  problem:
+    "Understanding cache memory mapping and replacement policies theoretically is difficult without visualization.",
 
-solution:
-"Created a GUI simulator showing cache operations visually.",
+  solution:
+    "Developed an interactive simulator that demonstrates set-associative cache operations and memory replacement techniques.",
 
-features:[
-"Set associative mapping",
-"Hit/Miss visualization",
-"LRU FIFO replacement",
-"Save simulation results"
-]
+  features: [
+    "Cache mapping simulation",
+    "LRU replacement policy",
+    "FIFO replacement policy",
+    "Memory access visualization",
+    "Interactive GUI"
+  ]
 }
 
 },
@@ -293,7 +298,7 @@ title:"Faculty Timetable Generator",
 
 category:"📅 AI Scheduling",
 
-image:"public/projects/timetable.png",
+image:"/projects/timetable.png",
 
 description:
 "Automatic faculty timetable generation system using constraint based scheduling.",
@@ -308,19 +313,20 @@ technologies:[
 "JavaScript"
 ],
 
-caseStudy:{
-problem:
-"Manual timetable creation causes conflicts and consumes time.",
+caseStudy: {
+  problem:
+    "Manual timetable preparation requires handling multiple constraints and becomes time consuming for institutions.",
 
-solution:
-"Used Prolog constraints to automatically generate conflict-free schedules.",
+  solution:
+    "Built an automatic timetable generation system using constraint satisfaction techniques and scheduling algorithms.",
 
-features:[
-"Automatic scheduling",
-"Constraint solving",
-"Conflict detection",
-"Web interface"
-]
+  features: [
+    "Constraint based scheduling",
+    "Faculty allocation",
+    "Automatic timetable creation",
+    "Conflict detection",
+    "Export timetable option"
+  ]
 }
 
 }

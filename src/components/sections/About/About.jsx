@@ -14,8 +14,8 @@ export default function About() {
   overflow-hidden
   bg-[#050816]
   text-white
-  pt-5
-  pb-16
+  pt-3
+  pb-8
   px-6
   "
 >
@@ -25,7 +25,7 @@ export default function About() {
 
       {/* ================= Main Container ================= */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
 
         {/* Small Heading */}
 
@@ -54,15 +54,13 @@ export default function About() {
           transition={{ delay: 0.15, duration: 0.7 }}
           className="
           text-center
-          text-5xl
-          md:text-6xl
+          text-4xl
+          md:text-5xl
           text font-black
           font-heading
-          tracking-tight
-          2xl:text-7xl
-          
+          tracking-tight          
           text-purple-400
-          mt-4
+          mt-2
           "
         >
           About{" "}
@@ -81,11 +79,11 @@ export default function About() {
           className="
           max-w-4xl
           mx-auto
-          mt-8
+          mt-5
           text-center
           text-gray-400
           text-lg
-          leading-9
+          leading-7
           "
         >
           I'm <span className="text-violet-400 font-semibold">Ravooru Sumanaswi</span>,
@@ -111,13 +109,13 @@ export default function About() {
           from-violet-500
           to-cyan-400
           mx-auto
-          mt-7
+          mt-4
           "
         />
 
         {/* ================= Content ================= */}
 
-        <div className="grid lg:grid-cols-[38%_62%] gap-12 mt-10">
+        <div className="grid lg:grid-cols-[38%_62%] gap-6 mt-6">
 
           {/* Left */}
 

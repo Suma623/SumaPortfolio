@@ -65,7 +65,19 @@ export default function RightContent({ onEnter }) {
 
         <div className="flex items-center">
 
-<h1 className="text-7xl xl:text-8xl font-bold tracking-tight bg-gradient-to-r from-cyan-300 via-white to-violet-400 bg-clip-text text-transparent">
+<h1 className="
+text-5xl
+lg:text-6xl
+xl:text-7xl
+font-bold
+tracking-tight
+bg-gradient-to-r
+from-cyan-300
+via-white
+to-violet-400
+bg-clip-text
+text-transparent
+">
             {text}
 
           </h1>
@@ -78,7 +90,12 @@ export default function RightContent({ onEnter }) {
               repeat: Infinity,
               duration: 0.8,
             }}
-            className="text-violet-500 text-7xl"
+            className="
+text-violet-500
+text-5xl
+lg:text-6xl
+xl:text-7xl
+"
           >
             |
           </motion.span>
@@ -99,7 +116,19 @@ export default function RightContent({ onEnter }) {
             transition={{
               duration: .8,
             }}
-            className="text-7xl xl:text-8xl font-bold tracking-tight bg-gradient-to-r from-cyan-300 via-white to-violet-400 bg-clip-text text-transparent"
+          className="
+text-5xl
+lg:text-6xl
+xl:text-7xl
+font-bold
+tracking-tight
+bg-gradient-to-r
+from-cyan-300
+via-white
+to-violet-400
+bg-clip-text
+text-transparent
+"
           >
             Sumanaswi
           </motion.h1>
@@ -133,7 +162,11 @@ export default function RightContent({ onEnter }) {
     <motion.p
       initial={{ opacity: 0, x: 30 }}
       animate={{ opacity: 1, x: 0 }}
-      className="text-2xl tracking-wide"
+      className="
+text-xl
+xl:text-2xl
+tracking-wide
+"
     >
       Software Engineer
     </motion.p>
@@ -187,8 +220,14 @@ export default function RightContent({ onEnter }) {
       scale: 0.96,
     }}
     onClick={onEnter}
-    className="group relative mt-16 overflow-hidden rounded-full p-[2px]"
-  >
+className="
+group
+relative
+mt-10
+overflow-hidden
+rounded-full
+p-[2px]
+"  >
 
     {/* Animated Border */}
 

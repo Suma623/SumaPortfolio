@@ -208,7 +208,7 @@ text-transparent
 className="
 text-center
 text-gray-400
-mb-16
+mb-6
 "
 >
 
@@ -223,7 +223,9 @@ Certifications, internships and achievements earned during my journey.
 className="
 grid
 md:grid-cols-2
-gap-8
+gap-6
+max-w-5xl
+mx-auto
 "
 >
 
@@ -260,13 +262,13 @@ y:-10
 
 className={`
 bg-[#111827]/80
-rounded-[30px]
+rounded-[24px]
 border
 border-white/10
-p-8
+p-5
 backdrop-blur-xl
 hover:border-violet-500
-hover:shadow-[0_0_40px_rgba(139,92,246,.25)]
+hover:shadow-[0_0_30px_rgba(139,92,246,.2)]
 transition-all
 duration-500
 
@@ -284,7 +286,7 @@ index === achievements.length - 1
 <div
 className={`
 text-5xl
-mb-6
+mb-4
 ${item.color}
 `}
 >
@@ -297,7 +299,7 @@ ${item.color}
 
 <h3
 className="
-text-2xl
+text-xl
 font-bold
 "
 >
@@ -324,8 +326,9 @@ mt-2
 
 <ul
 className="
-mt-6
-space-y-3
+mt-4
+space-y-2
+text-sm
 "
 >
 
@@ -365,7 +368,7 @@ href={item.certificate}
 target="_blank"
 rel="noreferrer"
 className="
-mt-8
+mt-5
 inline-flex
 items-center
 gap-2
@@ -403,8 +406,8 @@ mt-6
 key={i}
 
 className="
-px-4
-py-2
+px-3
+py-1
 rounded-full
 bg-violet-500/10
 text-violet-300

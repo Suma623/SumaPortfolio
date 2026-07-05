@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
-import ScrollDown from "./ScrollDown";
 
 export default function Hero() {
   return (
@@ -32,8 +31,8 @@ export default function Hero() {
     top-1/2
     -translate-x-1/2
     -translate-y-1/2
-    w-[650px]
-    h-[650px]
+    w-[550px]
+    h-[550px]
     rounded-full
     bg-violet-500
     blur-[220px]
@@ -60,8 +59,16 @@ export default function Hero() {
             repeat: Infinity,
             duration: 8,
           }}
-          className="absolute -top-52 left-0 w-[700px] h-[700px] rounded-full bg-violet-600 blur-[220px]"
-        />
+className="
+absolute
+-top-40
+left-0
+w-[500px]
+h-[500px]
+rounded-full
+bg-violet-600
+blur-[180px]
+"        />
 
         {/* Blue */}
 
@@ -74,8 +81,16 @@ export default function Hero() {
             repeat: Infinity,
             duration: 10,
           }}
-          className="absolute bottom-[-250px] right-[-150px] w-[700px] h-[700px] rounded-full bg-cyan-500 blur-[220px]"
-        />
+className="
+absolute
+bottom-[-150px]
+right-[-100px]
+w-[500px]
+h-[500px]
+rounded-full
+bg-cyan-500
+blur-[180px]
+"        />
 
         {/* Grid */}
 
@@ -92,9 +107,16 @@ export default function Hero() {
 
       {/* Main */}
 
-<div className="relative z-10 max-w-[1700px] mx-auto min-h-screen px-8 lg:px-12 pt-24">
-  <div className="grid lg:grid-cols-[47%_53%] min-h-[calc(100vh-96px)] items-center gap-8 lg:gap-0">         {/* LEFT */}
-
+<div className="relative z-10 max-w-7xl mx-auto min-h-screen px-8 lg:px-12 pt-20">
+<div
+className="
+grid
+lg:grid-cols-2
+min-h-[calc(100vh-80px)]
+items-center
+gap-10
+"
+>
           <HeroContent />
 
           {/* RIGHT */}
@@ -112,7 +134,8 @@ export default function Hero() {
         "
       >
 
-        <ScrollDown />
+        
+
 
       </div>
 

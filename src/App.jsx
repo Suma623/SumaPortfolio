@@ -5,26 +5,31 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 
 export default function App() {
 
-  const [entered, setEntered] = useState(false);
+const [entered,setEntered] = useState(false);
 
-  return (
 
-    <>
+return (
 
-      {!entered ? (
+<div
+className="
+w-full
+min-h-screen
+overflow-x-hidden
+bg-[#050816]
+"
+>
 
-        <Landing
-          onEnter={() => setEntered(true)}
-        />
+{
+!entered
+?
+<Landing onEnter={()=>setEntered(true)} />
+:
+<Portfolio />
+}
 
-      ) : (
 
-        <Portfolio />
+</div>
 
-      )}
-
-    </>
-
-  );
+);
 
 }

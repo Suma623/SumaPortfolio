@@ -20,11 +20,27 @@ export default function Landing({ onEnter }) {
       <FloatingBadges />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-[1700px] mx-auto min-h-screen">
+    <div
+className="
+relative
+z-10
+max-w-7xl
+mx-auto
+min-h-screen
+px-6
+lg:px-10
+"
+>
 
-        <div className="grid min-h-screen lg:grid-cols-[42%_58%]">
-
-          {/* Left Photo */}
+<div
+className="
+grid
+min-h-screen
+lg:grid-cols-2
+items-center
+gap-10
+"
+>          {/* Left Photo */}
 
           <div className="flex items-center justify-end pr-4 xl:pr-10">
             <LeftPhoto />

@@ -135,7 +135,7 @@ export default function HeroContent() {
         shadow-[0_0_35px_rgba(139,92,246,.18)]
         px-6
         py-3
-        mb-5
+        mb-2
         "
 
       >
@@ -196,9 +196,9 @@ export default function HeroContent() {
       }}
 
       className="
-      text-6xl
-      md:text-7xl
-      xl:text-8xl
+      text-5xl
+md:text-6xl
+xl:text-7xl
       font-black
       leading-none
       bg-gradient-to-r
@@ -235,9 +235,9 @@ export default function HeroContent() {
       }}
 
       className="
-      text-6xl
-      md:text-7xl
-      xl:text-8xl
+      text-5xl
+      md:text-6xl
+      xl:text-7xl
       font-black
       text-white
       leading-none
@@ -368,10 +368,10 @@ export default function HeroContent() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: .8 }}
-        className="mt-5
+        className="mt-4
         text-gray-300
-        text-xl
-        leading-10"
+        text-lg
+        leading-8"
       >
         I design and build{" "}
 
@@ -389,7 +389,7 @@ export default function HeroContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
-        className="flex flex-wrap gap-5 mt-7"
+        className="flex flex-wrap gap-4 mt-3"
       >
 
         
@@ -397,7 +397,7 @@ export default function HeroContent() {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1 }}
-  className="flex gap-5"
+  className="flex gap-3"
 >
 
 <button
@@ -426,7 +426,7 @@ export default function HeroContent() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3 }}
-        className="flex gap-6 mt-12"
+        className="flex gap-5 mt-6"
       >
 
         {[
@@ -466,7 +466,7 @@ export default function HeroContent() {
               rotate: 8,
             }}
             whileTap={{ scale: .95 }}
-            className={`w-14 h-14
+            className={`w-12 h-12
             rounded-full
             border border-white/10
             bg-white/5

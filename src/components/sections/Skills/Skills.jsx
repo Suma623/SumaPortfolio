@@ -47,7 +47,7 @@ const floatingIcons = [
 
 {
  icon:<FaJava />,
- position:"top-[45%] left-16",
+ position:"top-[35%] left-5",
  color:"text-orange-400",
 },
 
@@ -59,19 +59,19 @@ const floatingIcons = [
 
 {
  icon:<SiMongodb />,
- position:"bottom-136 left-24",
+ position:"bottom-115 left-24",
  color:"text-green-500",
 },
 
 {
  icon:<FaBrain />,
- position:"bottom-162 right-28",
+ position:"bottom-210 right-18",
  color:"text-purple-400",
 },
 
 {
  icon:<SiJavascript />,
- position:"top-364 right-[5%]",
+ position:"top-230 right-[5%]",
  color:"text-yellow-400",
 },
 
@@ -83,7 +83,7 @@ const floatingIcons = [
 
 {
  icon:<FaCss3Alt />,
- position:"top-152 right[35%]",
+ position:"top-310 right-[73%]",
  color:"text-blue-500",
 },
 
@@ -101,7 +101,7 @@ const floatingIcons = [
 
 {
  icon:<SiPostman />,
- position:"top-9 left-[60%]",
+ position:"top-7 left-[70%]",
  color:"text-orange-400",
 },
 
@@ -109,7 +109,7 @@ const floatingIcons = [
 
 {
  icon:"</>",
- position:"top-[55%] left[50%]",
+ position:"top-[55%] left-[100%]",
  color:"text-white",
 },
 
@@ -307,7 +307,7 @@ return(
 
 <section
 id="skills"
-className="relative overflow-hidden bg-[#050816] text-white py-10 px-6"
+className="relative overflow-hidden bg-[#050816] text-white py-8 px-6"
 >
 {/* Floating Icons */}
 
@@ -316,11 +316,16 @@ className="relative overflow-hidden bg-[#050816] text-white py-10 px-6"
 <motion.div
 key={index}
 className={`
-absolute hidden lg:flex
+absolute 
+hidden 
+lg:flex
+z-30
+pointer-events-none
 ${item.position}
 ${item.color}
 text-5xl
-opacity-30
+opacity-70
+drop-shadow-[0_0_25px_currentColor]
 `}
 animate={{
  y:[0,-25,0],
@@ -429,16 +434,18 @@ real-world applications.
 
 
 
-
 {/* STATS */}
 
-
-<div className="
+<div
+className="
 grid
 md:grid-cols-3
-gap-6
-my-16
-">
+gap-5
+my-8
+max-w-5xl
+mx-auto
+"
+>
 
 
 {[
@@ -454,27 +461,31 @@ my-16
 key={index}
 
 whileHover={{
-scale:1.08
+scale:1.05
 }}
 
 className="
 text-center
-rounded-2xl
+rounded-xl
 bg-white/5
 border
 border-white/10
-p-6
+px-5
+py-4
 backdrop-blur-xl
-shadow-[0_0_30px_rgba(139,92,246,.15)]
+shadow-[0_0_20px_rgba(139,92,246,.12)]
 "
 
 >
 
-<h3 className="
-text-2xl
+
+<h3
+className="
+text-xl
 font-bold
 text-cyan-400
-">
+"
+>
 
 {item}
 
@@ -487,24 +498,19 @@ text-cyan-400
 ))}
 
 
-
 </div>
-
-
-
-
 
 {/* SKILL CARDS */}
 
-
-
-<div className="
+<div
+className="
 grid
 lg:grid-cols-2
-gap-10
-">
-
-
+gap-6
+max-w-6xl
+mx-auto
+"
+>
 
 {skillCategories.map((category,index)=>(
 
@@ -514,7 +520,7 @@ key={index}
 
 initial={{
 opacity:0,
-y:60
+y:50
 }}
 
 whileInView={{
@@ -523,11 +529,11 @@ y:0
 }}
 
 transition={{
-delay:index*.15
+delay:index*.12
 }}
 
 whileHover={{
-y:-10
+y:-8
 }}
 
 viewport={{
@@ -535,31 +541,34 @@ once:true
 }}
 
 className={`
-rounded-[30px]
+rounded-[24px]
 border
 border-white/10
 bg-white/5
-p-8
+p-5
 backdrop-blur-xl
 hover:border-violet-500
 transition-all
 duration-500
-shadow-[0_0_40px_rgba(124,58,237,.15)]
+shadow-[0_0_30px_rgba(124,58,237,.12)]
 
 ${
 category.title === "Tools & Platforms"
-? "lg:col-span-2 max-w-4xl mx-auto w-full"
+? "lg:col-span-2 max-w-3xl mx-auto w-full"
 : ""
 }
 
 `}
 >
 
-<h3 className="
-text-3xl
+
+<h3
+className="
+text-2xl
 font-bold
-mb-3
-">
+mb-1
+"
+>
 
 <span>{category.icon}</span>
 
@@ -578,14 +587,17 @@ text-transparent
 
 </span>
 
-
 </h3>
 
 
-<p className="
+
+<p
+className="
 text-gray-400
-mb-8
-">
+text-sm
+mb-4
+"
+>
 
 {category.desc}
 
@@ -593,11 +605,14 @@ mb-8
 
 
 
-<div className="
+
+<div
+className="
 grid
 grid-cols-2
-gap-5
-">
+gap-3
+"
+>
 
 
 {category.skills.map((skill,i)=>(
@@ -610,11 +625,12 @@ key={i}
 className="
 flex
 items-center
-gap-4
+gap-3
 rounded-xl
 bg-[#111827]
-px-5
-py-4
+px-4
+py-3
+w-3/4
 hover:bg-violet-500/20
 transition
 "
@@ -622,10 +638,12 @@ transition
 >
 
 
-<span className="
-text-2xl
+<span
+className="
+text-xl
 text-violet-400
-">
+"
+>
 
 {skill.icon}
 
@@ -633,7 +651,11 @@ text-violet-400
 
 
 
-<span>
+<span
+className="
+text-sm
+"
+>
 
 {skill.name}
 
@@ -652,15 +674,9 @@ text-violet-400
 </motion.div>
 
 
-
 ))}
 
-
-
 </div>
-
-
-
 
 
 {/* CURRENT */}

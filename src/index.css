@@ -13,3 +13,21 @@ body{
 h1,h2,h3,h4{
   font-family:'Space Grotesk',sans-serif;
 }
+html,
+body,
+#root {
+width:100%;
+min-height:100%;
+overflow-x:hidden;
+}
+
+* {
+box-sizing:border-box;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}

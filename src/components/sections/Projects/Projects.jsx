@@ -18,7 +18,8 @@ relative
 overflow-hidden
 bg-[#050816]
 text-white
-py-25
+pt-6
+pb-10
 px-6
 "
 >
@@ -46,6 +47,7 @@ className="
 absolute
 top-20
 left-[-150px]
+w-full
 w-[600px]
 h-[600px]
 rounded-full
@@ -283,7 +285,7 @@ to-transparent
           text-gray-400
           max-w-3xl
           mx-auto
-          mb-20
+          mb-10
           "
           >
 
@@ -307,7 +309,9 @@ className="
 grid
 md:grid-cols-2
 xl:grid-cols-6
-gap-10
+gap-6
+max-w-6xl
+mx-auto
 "
 >
 

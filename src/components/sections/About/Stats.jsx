@@ -30,7 +30,15 @@ export default function Stats() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 max-w-5xl mx-auto"    >
+className="
+grid
+grid-cols-1
+md:grid-cols-3
+gap-10
+mt-8
+max-w-4xl
+mx-auto
+"   >
       {stats.map((item, index) => {
         const Icon = item.icon;
 
@@ -43,21 +51,24 @@ className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 max-w-5xl mx-auto"    >
             }}
             transition={{ duration: 0.3 }}
             className="
-            group
-            relative
-            overflow-hidden
-            rounded-3xl
-            border
-            border-white/10
-            bg-white/5
-            backdrop-blur-xl
-            p-8
-            text-center
-            shadow-[0_0_30px_rgba(255,255,255,.05)]
-            hover:border-violet-500/40
-            transition-all
-            duration-500
-            "
+group
+relative
+overflow-hidden
+rounded-2xl
+border
+border-white/10
+bg-white/5
+backdrop-blur-xl
+w-[300px]
+h-[170px]
+mx-auto
+p-5
+text-center
+shadow-[0_0_25px_rgba(255,255,255,.05)]
+hover:border-violet-500/40
+transition-all
+duration-500
+"
           >
             {/* Background Glow */}
 
@@ -85,9 +96,9 @@ className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 max-w-5xl mx-auto"    >
                 rotate: 8,
                 scale: 1.15,
               }}
-              className={`relative flex justify-center mb-5 ${item.color}`}
+              className={`relative flex justify-center mb-3 ${item.color}`}
             >
-              <Icon size={36} />
+              <Icon size={28} />
             </motion.div>
 
             {/* Number */}
@@ -100,7 +111,7 @@ className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14 max-w-5xl mx-auto"    >
                 type: "spring",
                 stiffness: 120,
               }}
-              className="text-5xl text-mauve-400 font-extrabold mb-3 "
+              className="text-5xl text-mauve-400 font-extrabold mb-2 "
             >
               {item.number}
             </motion.h3>

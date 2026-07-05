@@ -62,7 +62,7 @@ const cards = [
 
 export default function AboutCards() {
   return (
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-5">
 
       {cards.map((card, index) => {
 
@@ -98,7 +98,7 @@ export default function AboutCards() {
             border-white/10
             bg-white/5
             backdrop-blur-xl
-            p-8
+            p-5
             transition-all
             duration-500
             shadow-[0_0_25px_rgba(255,255,255,.05)]
@@ -132,8 +132,8 @@ export default function AboutCards() {
                 scale: 1.15,
               }}
               className={`
-              w-16
-              h-16
+              w-12
+              h-12
               rounded-2xl
               bg-white/5
               border
@@ -141,31 +141,31 @@ export default function AboutCards() {
               flex
               items-center
               justify-center
-              text-3xl
-              mb-7
+              text-2xl
+              mb-2
               ${card.color}
               `}
             >
-              <Icon size={34} />
+              <Icon size={26} />
             </motion.div>
 
             {/* Title */}
 
             {/* Title */}
 
-<h3 className={`text-2xl font-bold mb-6 ${card.color}`}>
+<h3 className={`text-xl font-bold mb-3 ${card.color}`}>
   {card.title}
 </h3>
 
             {/* Content */}
 
-            <div className="space-y-3">
+            <div className="space-y-2">
 
               {card.description.map((text, i) => (
 
                 <p
                   key={i}
-                  className="text-gray-400 leading-7"
+                  className="text-gray-400 leading-6 text-sm"
                 >
                   {text}
                 </p>

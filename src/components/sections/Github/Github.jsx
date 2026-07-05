@@ -89,8 +89,8 @@ relative
 overflow-hidden
 bg-[#050816]
 text-white
-pt-6
-pb-8
+pt-3
+pb-5
 px-6
 "
 >
@@ -139,7 +139,7 @@ text-white/5
 
 
 
-<div className="relative max-w-7xl mx-auto">
+<div className="relative max-w-6xl mx-auto">
 
 
 {/* Heading */}
@@ -168,7 +168,7 @@ className="text-center"
 className="
 tracking-[5px]
 text-violet-400
-mb-5
+mb-2
 "
 >
 
@@ -179,7 +179,7 @@ mb-5
 
 <h2
 className="
-text-5xl
+text-4xl
 font-black
 "
 >
@@ -208,7 +208,7 @@ text-transparent
 <p
 className="
 text-gray-400
-mt-5
+mt-3
 "
 >
 
@@ -230,8 +230,8 @@ Explore my development journey across platforms.
 className="
 grid
 lg:grid-cols-3
-gap-8
-mt-16
+gap-5
+mt-4
 "
 >
 
@@ -283,7 +283,7 @@ rounded-[30px]
 border
 border-white/10
 bg-[#111827]/80
-p-8
+p-5
 backdrop-blur-xl
 hover:border-violet-500
 hover:shadow-[0_0_50px_rgba(139,92,246,.3)]
@@ -296,8 +296,8 @@ duration-500
 
 <div
 className={`
-text-6xl
-mb-8
+text-5xl
+mb-4
 ${profile.color}
 `}
 >
@@ -310,7 +310,7 @@ ${profile.color}
 
 <h3
 className="
-text-3xl
+text-2xl
 font-bold
 "
 >
@@ -337,8 +337,9 @@ mt-2
 <p
 className="
 text-gray-400
-mt-5
-leading-7
+mt-3
+leading-6
+text-sm
 "
 >
 
@@ -351,7 +352,7 @@ leading-7
 <ul
 className="
 mt-6
-space-y-3
+space-y-2
 "
 >
 
@@ -363,7 +364,8 @@ space-y-3
 key={i}
 className="
 flex
-gap-3
+gap-2
+text-sm
 text-gray-300
 "
 >
@@ -388,7 +390,7 @@ text-gray-300
 
 <div
 className="
-mt-8
+mt-5
 flex
 justify-between
 items-center

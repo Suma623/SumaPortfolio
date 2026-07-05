@@ -3,6 +3,7 @@ import {
   GraduationCap,
   CalendarDays,
   BadgeCheck,
+  Star,
 } from "lucide-react";
 
 export default function AboutProfile() {
@@ -23,7 +24,7 @@ export default function AboutProfile() {
       border-white/10
       bg-white/5
       backdrop-blur-xl
-      p-8
+      p-5
       shadow-[0_0_40px_rgba(139,92,246,.15)]
       "
     >
@@ -57,11 +58,11 @@ export default function AboutProfile() {
         className="relative flex justify-center"
       >
         <img
-          src="public/profile/about-profile1.png"
+          src="/profile/about-profile1.png"
           alt="Ravooru Sumanaswi"
           className="
-          w-56
-          h-56
+          w-40
+          h-40
           rounded-full
           object-cover
           border-4
@@ -73,9 +74,9 @@ export default function AboutProfile() {
 
       {/* Name */}
 
-      <div className="mt-8 text-center">
+      <div className="mt-4 text-center">
 
-        <h2 className="text-3xl text-purple-400 font-bold">
+        <h2 className="text-2xl text-purple-400 font-bold">
           Ravooru{" "}
           <span className="text-violet-400">
             Sumanaswi
@@ -87,101 +88,147 @@ export default function AboutProfile() {
         </p>
 
       </div>
+{/* Details */}
 
-      {/* Divider */}
+<div className="space-y-3">
 
-      <div className="my-8 h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent" />
+  {/* Education */}
 
-      {/* Details */}
+  <div className="flex items-start gap-4">
 
-      <div className="space-y-5">
+    <GraduationCap
+      size={22}
+      className="text-violet-400 mt-1"
+    />
 
-        <div className="flex items-start gap-4">
+    <div>
 
-          <GraduationCap
-            size={22}
-            className="text-violet-400 mt-1"
-          />
+      <h4
+        className="
+        font-semibold
+        bg-gradient-to-r
+        from-violet-400
+        to-cyan-400
+        bg-clip-text
+        text-transparent
+        "
+      >
+        Education
+      </h4>
 
-          <div>
+      <p className="text-gray-400 text-sm mt-1">
+        B.Tech Computer Science Engineering
+      </p>
 
-            <h4 className="font-semibold
-  bg-gradient-to-r
-  from-violet-400
-  to-cyan-400
-  font size-5xl
-  bg-clip-text
-  text-transparent">
-              Education
-            </h4>
+      <p className="text-gray-500 text-sm">
+        SRM University AP
+      </p>
 
-            <p className="text-gray-400 text-sm mt-1">
-              B.Tech Computer Science Engineering
-            </p>
+    </div>
 
-            <p className="text-gray-500 text-sm">
-              SRM University AP
-            </p>
+  </div>
 
-          </div>
 
-        </div>
+  {/* Timeline */}
 
-        <div className="flex items-start gap-4">
+  <div className="flex items-start gap-4">
 
-          <CalendarDays
-            size={22}
-            className="text-cyan-400 mt-1"
-          />
+    <CalendarDays
+      size={22}
+      className="text-cyan-400 mt-1"
+    />
 
-          <div>
+    <div>
 
-            <h4 className="font-semibold
-  bg-gradient-to-r
-  from-violet-400
-  to-cyan-400
-  font size-5xl
-  bg-clip-text
-  text-transparent">
-              Timeline
-            </h4>
+      <h4
+        className="
+        font-semibold
+        bg-gradient-to-r
+        from-violet-400
+        to-cyan-400
+        bg-clip-text
+        text-transparent
+        "
+      >
+        Timeline
+      </h4>
 
-            <p className="text-gray-400 text-sm mt-1">
-              2023 — Present
-            </p>
+      <p className="text-gray-400 text-sm mt-1">
+        2023 — Present
+      </p>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-        <div className="flex items-start gap-4">
 
-          <BadgeCheck
-            size={22}
-            className="text-green-400 mt-1"
-          />
+  {/* CGPA */}
 
-          <div>
+  <div className="flex items-start gap-4">
 
-            <h4 className="font-semibold
-  bg-gradient-to-r
-  from-violet-400
-  to-cyan-400
-  font size-5xl
-  bg-clip-text
-  text-transparent">
-              Status
-            </h4>
+    <Star
+      size={22}
+      className="text-yellow-400 mt-1"
+    />
 
-            <p className="text-gray-400 text-sm mt-1">
-              Available for Internships & Full-Time Opportunities
-            </p>
+    <div>
 
-          </div>
+      <h4
+        className="
+        font-semibold
+        bg-gradient-to-r
+        from-violet-400
+        to-cyan-400
+        bg-clip-text
+        text-transparent
+        "
+      >
+        CGPA
+      </h4>
 
-        </div>
+      <p className="text-gray-400 text-sm mt-1">
+        8.7 / 10
+      </p>
 
-      </div>
+    </div>
+
+  </div>
+
+
+  {/* Status */}
+
+  <div className="flex items-start gap-4">
+
+    <BadgeCheck
+      size={22}
+      className="text-green-400 mt-1"
+    />
+
+    <div>
+
+      <h4
+        className="
+        font-semibold
+        bg-gradient-to-r
+        from-violet-400
+        to-cyan-400
+        bg-clip-text
+        text-transparent
+        "
+      >
+        Status
+      </h4>
+
+      <p className="text-gray-400 text-sm mt-1">
+        Available for Internships & Full-Time Opportunities
+      </p>
+
+    </div>
+
+  </div>
+
+
+</div>
 
       {/* Bottom Glow */}
 

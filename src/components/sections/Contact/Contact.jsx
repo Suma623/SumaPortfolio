@@ -53,8 +53,8 @@ const sendEmail = (e) => {
   overflow-hidden
   bg-[#050816]
   text-white
-  pt-10
-  pb-8
+  pt-4
+  pb-4
   "
 >
       {/* Background Glow */}
@@ -78,7 +78,7 @@ const sendEmail = (e) => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-8">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
 
          {/* LEFT SIDE */}
 
@@ -97,29 +97,48 @@ const sendEmail = (e) => {
 
   </span>
 
-  {/* Heading */}
+{/* Heading */}
 
-<h2 className="mt-6 text-6xl xl:text-7xl font-black leading-tight bg-gradient-to-r from-pink-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+<h2
+className="
+mt-5
+text-5xl
+xl:text-5xl
+font-black
+leading-tight
+bg-gradient-to-r
+from-pink-400
+via-fuchsia-400
+to-cyan-400
+bg-clip-text
+text-transparent
+"
+>
 
-    Let's Build
+  Let's Build Something
 
-    <br />
+  <br />
 
-    Something
+  <span
+  className="
+  bg-gradient-to-r
+  from-violet-400
+  via-fuchsia-400
+  to-cyan-400
+  bg-clip-text
+  text-transparent
+  "
+  >
 
-    <br />
+    Amazing.
 
-    <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+  </span>
 
-      Amazing.
-
-    </span>
-
-  </h2>
+</h2>
 
   {/* Description */}
 
-  <p className="mt-8 text-xl leading-10 text-gray-300 max-w-xl">
+  <p className="mt-5 text-xl leading-10 text-gray-300 max-w-xl">
 
     I'm always open to discussing internships,
     research opportunities, startup ideas,
@@ -137,13 +156,13 @@ const sendEmail = (e) => {
   {/* Button */}
 
   <button
-  className="group relative mt-14 overflow-hidden rounded-full p-[2px]"
+  className="group relative mt-8 overflow-hidden rounded-full p-[2px]"
 >
   {/* Animated Border */}
   <div className="absolute inset-0 animate-pulse rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-500" />
 
   {/* Button */}
-  <div className="relative flex items-center gap-4 rounded-full bg-[#050816] px-10 py-5 text-white transition-all duration-500 group-hover:bg-transparent">
+  <div className="relative flex items-center gap-4 rounded-full bg-[#050816] px-8 py-3 text-white transition-all duration-500 group-hover:bg-transparent">
 
     <span className="text-xl">🚀</span>
 
@@ -167,14 +186,19 @@ const sendEmail = (e) => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: .8 }}
             viewport={{ once: true }}
+             className="
+ max-w-[510px]
+ ml-auto
+ w-full
+ "
           >
 
-            <div className="rounded-[35px] border border-white/10 bg-white/5 p-8 backdrop-blur-2xl shadow-[0_0_60px_rgba(124,58,237,.18)]">
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-4.5 backdrop-blur-2xl shadow-[0_0_40px_rgba(124,58,237,.18)]">
 
              <form
   ref={form}
   onSubmit={sendEmail}
-  className="space-y-6"
+  className="space-y-4"
 >
 
   {/* Name */}
@@ -187,7 +211,7 @@ const sendEmail = (e) => {
        name="user_name"
   type="text"
   placeholder="Your Name"
-      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-5 pl-14 pr-5 text-white outline-none transition focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,.4)]"
+      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-4 pl-14 pr-5 text-white outline-none transition focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,.4)]"
     />
 
   </div>
@@ -202,7 +226,7 @@ const sendEmail = (e) => {
       name="user_email"
   type="email"
       placeholder="Your Email"
-      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-5 pl-14 pr-5 text-white outline-none transition focus:border-cyan-400 focus:shadow-[0_0_20px_rgba(34,211,238,.4)]"
+      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-4 pl-14 pr-5 text-white outline-none transition focus:border-cyan-400 focus:shadow-[0_0_20px_rgba(34,211,238,.4)]"
     />
 
   </div>
@@ -215,9 +239,9 @@ const sendEmail = (e) => {
 
     <textarea
     name="message"
-      rows="7"
+      rows="5"
       placeholder="Tell me about your project..."
-      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-5 pl-14 pr-5 text-white outline-none resize-none transition focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,.4)]"
+      className="w-full rounded-2xl border border-white/10 bg-[#111827]/70 py-4 pl-14 pr-5 text-white outline-none resize-none transition focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,.4)]"
     />
 
   </div>
@@ -227,7 +251,7 @@ const sendEmail = (e) => {
   <button
   type="submit"
   disabled={loading}
-  className="group relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-500 to-cyan-500 py-5 text-lg font-semibold text-white shadow-[0_0_35px_rgba(139,92,246,.35)] transition-all duration-500 hover:scale-[1.02]"
+  className="group relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-500 to-cyan-500 py-4 text-base font-semibold text-white shadow-[0_0_35px_rgba(139,92,246,.35)] transition-all duration-500 hover:scale-[1.02]"
 >
   <span className="relative z-10 flex items-center justify-center gap-3">
 
@@ -245,7 +269,7 @@ const sendEmail = (e) => {
 )}
 </form>
 
-<div className="mt-10 flex justify-center">
+<div className="mt-5 flex justify-center">
 
   <a
     href="https://x.com/home"

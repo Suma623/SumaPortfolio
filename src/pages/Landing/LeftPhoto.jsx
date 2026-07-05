@@ -69,13 +69,15 @@ const LeftPhoto = () => {
         }}
 
         className="
-        absolute
-        w-[520px]
-        h-[520px]
-        rounded-full
-        border
-        border-violet-500/40
-        "
+absolute
+w-[420px]
+h-[420px]
+xl:w-[480px]
+xl:h-[480px]
+rounded-full
+border
+border-violet-500/40
+"
 
         />
 
@@ -102,8 +104,10 @@ const LeftPhoto = () => {
 
           className="
           absolute
-          w-[500px]
-          h-[500px]
+          w-[420px]
+h-[420px]
+xl:w-[480px]
+xl:h-[480px]
           rounded-full
           bg-gradient-to-r
           from-violet-600
@@ -123,8 +127,10 @@ const LeftPhoto = () => {
 
         className="
         absolute
-        w-[430px]
-        h-[430px]
+        w-[350px]
+h-[350px]
+xl:w-[400px]
+xl:h-[400px]
         rounded-full
         bg-white/5
         border
@@ -163,9 +169,11 @@ const LeftPhoto = () => {
   relative
   z-10
 
-  w-[430px]
-  h-[620px]
+ w-[340px]
+h-[500px]
 
+xl:w-[390px]
+xl:h-[560px]
   rounded-[45px]
 
   overflow-hidden

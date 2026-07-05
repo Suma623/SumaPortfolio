@@ -109,8 +109,8 @@ className="
 relative overflow-hidden
 bg-[#050816]
 text-white
-pt-10
-pb-25
+pt-3
+pb-8
 px-6
 "
 >
@@ -123,10 +123,10 @@ px-6
 <div
 className="
 absolute
-top-10
+top-8
 left-1/2
 -translate-x-1/2
-text-[150px]
+text-[110px]
 font-black
 text-white/[0.03]
 select-none
@@ -158,6 +158,7 @@ className="
 absolute
 top-40
 left-[-180px]
+w-full
 w-[600px]
 h-[600px]
 rounded-full
@@ -221,63 +222,69 @@ backgroundSize:"70px 70px"
 />
 
 
-
 {/* YOUR CONTENT */}
-
-<div className="relative z-10 max-w-6xl mx-auto"></div>
 
 <div className="relative z-10 max-w-6xl mx-auto">
 
 
 {/* Heading */}
 
-
-
-<h2 className="
+<h2
+className="
 text-center
 text-5xl
 font-black
-mb-5
-">
+mb-3
+"
+>
 
 💼 Experience
 
-<span className="
+<span
+className="
 bg-gradient-to-r
 from-violet-400
 to-cyan-400
 bg-clip-text
 text-transparent
-">
-
- Journey
-
+"
+>
+{" "}Journey
 </span>
 
 </h2>
 
 
-<p className="
+<p
+className="
 text-center
 text-gray-400
-mb-15
-">
-
+mb-8
+"
+>
 My learning, development and project experience.
-
 </p>
 
 
 
-{/* Timeline */}
+{/* ================= Timeline ================= */}
 
 
-<div className="relative">
+<div
+className="
+relative
+max-w-3xl
+mx-auto
+"
+>
 
 
-<div className="
+{/* Vertical Line */}
+
+<div
+className="
 absolute
-left-6
+left-5
 top-0
 h-full
 w-1
@@ -285,12 +292,12 @@ rounded-full
 bg-gradient-to-b
 from-violet-500
 to-cyan-500
-"/>
+"
+/>
 
 
 
 {experiences.map((exp,index)=>(
-
 
 <motion.div
 
@@ -308,19 +315,19 @@ y:0
 
 transition={{
 duration:.6,
-delay:index*0.1
+delay:index*.1
 }}
 
 viewport={{once:true}}
 
 className={`
 relative
-pl-20
+pl-16
 
 ${
-index === experiences.length - 1
+index === experiences.length-1
 ? "pb-0"
-: "pb-14"
+: "pb-7"
 }
 
 `}
@@ -328,23 +335,32 @@ index === experiences.length - 1
 >
 
 
-{/* icon */}
+{/* ICON */}
 
-<div className="
+<div
+className="
 absolute
 left-0
-w-14
-h-14
+top-1
+
+w-11
+h-11
+
 rounded-full
+
 bg-gradient-to-r
 from-violet-600
 to-cyan-500
+
 flex
 items-center
 justify-center
-text-xl
+
+text-lg
+
 shadow-[0_0_25px_rgba(139,92,246,.8)]
-">
+"
+>
 
 {exp.icon}
 
@@ -352,112 +368,142 @@ shadow-[0_0_25px_rgba(139,92,246,.8)]
 
 
 
-{/* card */}
 
-<div className="
+{/* CARD */}
+
+<div
+className="
+w-full
+
 bg-[#111827]/80
 backdrop-blur-xl
+
 rounded-3xl
+
 border
 border-white/10
-p-9
+
+p-5
+
 hover:border-violet-500
 hover:-translate-y-2
 hover:shadow-[0_0_40px_rgba(139,92,246,.3)]
+
 transition-all
 duration-500
-">
+"
+>
 
 
-<h3 className="
-text-2xl
+<h3
+className="
+text-xl
 font-bold
-">
-
+"
+>
 {exp.role}
-
 </h3>
 
 
-<p className="
+
+<p
+className="
 text-violet-400
-mt-2
-">
-
+mt-1
+"
+>
 {exp.company}
-
 </p>
 
 
-<p className="
+
+<p
+className="
 text-gray-400
 text-sm
-mb-6
-">
-
+mb-4
+"
+>
 {exp.duration}
-
 </p>
 
 
 
-{/* skills */}
 
-<div className="
+{/* Skills */}
+
+<div
+className="
 flex
 flex-wrap
-gap-3
-mb-6
-">
+gap-2
+mb-4
+"
+>
+
 
 {exp.skills.map((skill,i)=>(
 
 <span
+
 key={i}
+
 className="
-px-4
-py-2
+px-3
+py-1
+
 rounded-full
+
 bg-violet-500/10
+
 text-violet-300
 text-sm
 "
+
 >
 
 {skill}
 
 </span>
 
+
 ))}
+
 
 </div>
 
 
 
-<ul className="
-space-y-3
-">
+
+
+<ul
+className="
+space-y-2
+"
+>
 
 {exp.description.map((point,i)=>(
 
 
 <li
+
 key={i}
+
 className="
 flex
-gap-3
+gap-2
+
+text-sm
 text-gray-300
 "
+
 >
 
 <span className="text-cyan-400">
-
 ✓
-
 </span>
 
 {point}
-
 
 </li>
 
@@ -480,7 +526,6 @@ text-gray-300
 
 
 </div>
-
 
 </section>
 

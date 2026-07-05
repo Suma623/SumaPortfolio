@@ -17,11 +17,11 @@ duration:7
 }}
 className="
 absolute
-w-[700px]
-h-[700px]
+w-[520px]
+h-[520px]
 rounded-full
 bg-violet-500
-blur-[220px]
+blur-[180px]
 "
 />
 
@@ -57,13 +57,13 @@ blur-[180px]
       ease: "easeInOut",
     }}
     className="
-      absolute
-      w-[700px]
-      h-[700px]
-      rounded-full
-      bg-violet-500
-      blur-[220px]
-    "
+absolute
+w-[520px]
+h-[520px]
+rounded-full
+bg-violet-500
+blur-[180px]
+"
   />
 
   {/* 4️⃣ NEW Glowing Ring */}
@@ -79,8 +79,8 @@ blur-[180px]
     }}
     className="
       absolute
-      w-[520px]
-      h-[520px]
+      w-[420px]
+      h-[420px]
       rounded-full
       border-[6px]
       border-violet-500/70
@@ -92,8 +92,8 @@ blur-[180px]
   <div
     className="
       absolute
-      w-[650px]
-      h-[650px]
+      w-[500px]
+      h-[500px]
       rounded-full
       border
       border-dashed
@@ -129,14 +129,14 @@ blur-[180px]
         className="relative z-20"
       >
         <img
-          src="/public/profile.png"
+          src="/profile/profile.png"
           alt="Ravooru Sumanaswi"
           draggable={false}
           className="
 relative
 z-20
-h-[82vh]
-xl:h-[85vh]
+h-[65vh]
+xl:h-[72vh]
 object-contain
 drop-shadow-[0_80px_120px_rgba(0,0,0,.8)]
 
