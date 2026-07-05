@@ -26,17 +26,24 @@ export default function Hero() {
     ease: "easeInOut",
   }}
   className="
-    absolute
-    left-1/2
-    top-1/2
-    -translate-x-1/2
-    -translate-y-1/2
-    w-[550px]
-    h-[550px]
-    rounded-full
-    bg-violet-500
-    blur-[220px]
-  "
+absolute
+left-1/2
+top-1/2
+-translate-x-1/2
+-translate-y-1/2
+
+w-[260px]
+h-[260px]
+
+md:w-[550px]
+md:h-[550px]
+
+rounded-full
+bg-violet-500
+
+blur-[120px]
+md:blur-[220px]
+"
 />
 {/* Stars */}
 
@@ -61,14 +68,22 @@ export default function Hero() {
           }}
 className="
 absolute
--top-40
+
+-top-20
 left-0
-w-[500px]
-h-[500px]
+
+w-[250px]
+h-[250px]
+
+md:w-[500px]
+md:h-[500px]
+
 rounded-full
 bg-violet-600
-blur-[180px]
-"        />
+
+blur-[100px]
+md:blur-[180px]
+"     />
 
         {/* Blue */}
 
@@ -83,14 +98,22 @@ blur-[180px]
           }}
 className="
 absolute
-bottom-[-150px]
-right-[-100px]
-w-[500px]
-h-[500px]
+
+bottom-[-80px]
+right-[-50px]
+
+w-[250px]
+h-[250px]
+
+md:w-[500px]
+md:h-[500px]
+
 rounded-full
 bg-cyan-500
-blur-[180px]
-"        />
+
+blur-[100px]
+md:blur-[180px]
+"      />
 
         {/* Grid */}
 
